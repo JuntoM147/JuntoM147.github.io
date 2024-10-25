@@ -1,9 +1,31 @@
-.page {
+/* .page {
     background-color: black;
-}
+} */
 .title {
     color: white;
     font-family: 'Times New Roman', Times, serif;
     font-size: xx-large;
     padding: 20px ;
+}
+.about {
+    color: white;
+    font-family: 'Times New Roman', 'Times, serif';
+    font-size: xx-large;
+}
+
+.top_buttons {
+    background-color: white;
+    width: 20px;
+    height: 30px;
+    border: none;
+}
+
+.social_media_icons{
+    width: 20px;
+    height: 30px;
+}
+
+#profile_photo {
+    width:60px;
+    height:90px;
 }
