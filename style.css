@@ -1,5 +1,5 @@
 .page {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 main{
@@ -7,27 +7,19 @@ main{
     padding-right: 70px;
 }
 
+/* Header */
 .header{
-    /* display: flex;
-    flex-direction: row; */
+    display: flex;
+    flex-direction: row;
     justify-content: right;
+    align-content: space-between;
+    align-items: flex-end;
     padding-bottom: 20px;
     margin-bottom: 30px;
 }
 
-.top{
-    display: flex;
-}
-
-.header{
-    display: flex;
-    flex-direction: row;
-    align-content: space-between;
-    align-items: flex-end;
-}
-
 .header button{
-    background-color: black;
+    background-color: transparent;
     width: 40px;
     height: 30px;
     border: none;
@@ -46,24 +38,66 @@ main{
     height: 30px;
 }
 
+/* Top Section */
+.top{
+    display: flex;
+    margin-bottom: 40px;
+}
+
 #profile_photo {
     width:90px;
-    height:140px;
+    height:90px;
+    border: 3px solid white;
 }
 
 .title {
+    display: flex;
     color: white;
+    align-items: center;
+    justify-content: space-between;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: xx-large;
+    font-size: x-large;
     padding-left: 20px;
 }
+
+.nationality{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nationality img{
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+}
+
 .about {
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: small;
+    font-size: x-small;
     padding-left: 25px;
     padding-top: 10px;
 }
+
+.location{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-small;
+}
+
+.location img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+/* About Me */
 
 .about_me{
     padding-bottom: 30px;
@@ -94,11 +128,15 @@ main{
     margin-right: 20px;
 }
 
+/* Projects */
+
 .projects{
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: x-large;
 }
+
+/* Contact Me */
 
 .contact_me{
     color: white;
@@ -106,4 +144,35 @@ main{
     font-size: x-large;
 }
 
+/* Skills */
+.skills{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
 
+/* Bottom */
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.bottom button{
+    background-color: transparent;
+    width: 40px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.bottom button:hover{
+    background-color: #c6c6c6;
+}
