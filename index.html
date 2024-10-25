@@ -6,41 +6,49 @@
     <title>Junto Mabuchi</title>
     <link rel="stylesheet" href="style.css" >
 </head>
+
 <body class="page">
     <!-- Header -->
-    <header>
-        <span><img id="profile_photo" src="images/profile_photo.png"></span>
-        <div>
-            <button class="top_buttons"> <img class=social_media_icons src="images/email.png"> </button>
-            <button class="top_buttons"> CV </button>
-            <button class="top_buttons"> <img class=social_media_icons src="images/phone.png"> </button>
-            <button class="top_buttons" > <img class=social_media_icons src="images/linkedin.png"> </button>
-            <button class="top_buttons"> <img class=social_media_icons src="images/whatsapp.png"> </button>
-            <button class="top_buttons"> <img class=social_media_icons src="images/Instagram.png"> </button>
-            <button class="top_buttons"> <img class=social_media_icons src="images/wechat.png"> </button>
-        </div>
+    <header class="header">
+    <!-- Social Media Buttons -->
+        <button> CV </button>
+        <button> <img class=social_media_icons src="images/email.png"> </button>
+        <button> <img class=social_media_icons src="images/phone.png"> </button>
+        <button> <img class=social_media_icons src="images/linkedin.png"> </button>
+        <button> <img class=social_media_icons src="images/whatsapp.png"> </button>
+        <button> <img class=social_media_icons src="images/instagram.png"> </button>
     </header>
 
-    <!-- Top Content -->
-    <section>
-        <div class="title"> Junto Mabuchi</div>
-        <p class="About"> A 2nd year student at Imperial College London</p>
+    <main>
+    <section class="top">
+        <!-- Profile Photo -->
+        <div><img id="profile_photo" src="images/profile_photo.png"></div>
+        
+        <!-- Name and Description -->
+        <section>
+            <div class="title"> Junto Mabuchi</div>
+            <div class="about"> A 2nd year student at Imperial College London studying Electronic and Information Engineering (Bachelors)</div>
+        </section>
     </section>
 
-    <!-- Experiences Section -->
-    <section>
-        <div> Experience </div>
+    <!-- About Me Section -->
+    <section class="about_me">
+        About Me
+        <div class="imperial">
+            <img src="images/imperial.jpg">
+            <p>Electronic and Information Engineering student at <a href="https://www.imperial.ac.uk/">Imperial College London</a> (2023-2026)</p>
+        </div>
     </section>
 
     <!-- Personal Projects -->
     <section>
-        <div> Projects </div>
+        <div class="projects"> Projects </div>
     </section>
 
     <!-- Contact Me -->
     <section>
+        <div class="contact_me"> Contact Me </div>
     </section>
-
-
+    </main>
 </body>
 </html>

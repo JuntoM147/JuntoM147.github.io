@@ -1,31 +1,109 @@
-/* .page {
+.page {
     background-color: black;
-} */
-.title {
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: xx-large;
-    padding: 20px ;
-}
-.about {
-    color: white;
-    font-family: 'Times New Roman', 'Times, serif';
-    font-size: xx-large;
 }
 
-.top_buttons {
-    background-color: white;
-    width: 20px;
+main{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.header{
+    /* display: flex;
+    flex-direction: row; */
+    justify-content: right;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.top{
+    display: flex;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: flex-end;
+}
+
+.header button{
+    background-color: black;
+    width: 40px;
     height: 30px;
     border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.header button:hover{
+    background-color: #c6c6c6;
 }
 
 .social_media_icons{
-    width: 20px;
+    width: 30px;
     height: 30px;
 }
 
 #profile_photo {
-    width:60px;
-    height:90px;
+    width:90px;
+    height:140px;
 }
+
+.title {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    padding-left: 20px;
+}
+.about {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: small;
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+.about_me{
+    padding-bottom: 30px;
+    border-top: 1px solid rgb(154, 154, 154);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+    padding-top: 20px;
+}
+
+.imperial{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.imperial p{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: small;
+}
+
+.imperial img{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.projects{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+
+.contact_me{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+
+
