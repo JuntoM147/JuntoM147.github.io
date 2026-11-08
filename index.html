@@ -1,70 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Junto Mabuchi</title>
-    <link rel="stylesheet" href="style.css" >
-</head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Junto Mabuchi Website">
+  <title>Junto Mabuchi</title>
+  <link rel="stylesheet" href="style.css">
 
-<script type="text/javascript" src="scripts.js"></script>
-
-<body class="page">
+  <body>
     <!-- Header -->
-    <header class="header">
-    <!-- Social Media Buttons -->
-        <button> CV </button>
-        <button> <img class=social_media_icons src="images/email.png"> </button>
-        <button> <img class=social_media_icons src="images/linkedin.png"> </button>
-        <button> <img class=social_media_icons src="images/github.png"> </button>
+    <header class="site-header">
+      <h1 class="site-name">Junto Mabuchi</h1>
+      <nav class="contact-links" aria-label="Contact and CV">
+        <a class="contact-link" href="mailto:juntomabuchi@hotmail.com">Email</a>
+        <a class="contact-link contact-github" href="https://github.com/JuntoM147"
+            aria-label="GitHub profile" title="GitHub">
+          <img class="github-icon" src="assets/github.png" alt="" width="24" height="24">
+        </a>
+        <a class="contact-link" href="https://www.linkedin.com/in/junto-mabuchi/"
+            aria-label="LinkedIn profile" title="LinkedIn">
+          <img class="linkedin-icon" src="assets/linkedin.svg" alt="" width="24" height="24">
+        </a>
+        <a class="contact-link" href="assets/CV.pdf">CV</a>
+      </nav>
     </header>
 
-    <main>
-    <section class="top">
-        <!-- Profile Photo -->
-        <div><img id="profile_photo" src="images/profile_photo.png"></div>
-        
-        <!-- Name and Description -->
-        <section>
-            <div class="title"> Junto Mabuchi <span class="nationality"> <img id="japan" src="images/japan.png"> / <img src="images/korea.png"> </span></div>
-            <div class="about"> A 2nd year student at Imperial College London studying Electronic and Information Engineering (Bachelors)</div>
-            <div class="location"> <img src="images/location.png"> London, UK </div>
+    <main class="page-layout">
+      <!-- Profile sidebar -->
+      <aside class="profile" aria-label="Profile details">
+        <img class="profile-photo" src="assets/profile.png" alt="Junto Mabuchi"
+            width="1280" height="1279">
+        <ul class="profile-details">
+          <li class="profile-detail">
+            <img class="profile-icon" src="assets/location.svg" alt=""
+                width="16" height="16">
+            <span>New Territories, Hong Kong</span>
+          </li>
+          <li class="profile-detail">
+            <img class="profile-icon" src="assets/work.svg" alt=""
+                width="16" height="16">
+            <span>Software Engineer Intern at Confo Quanta Limited</span>
+          </li>
+        </ul>
+      </aside>
+
+      <div class="main-content">
+        <!-- About -->
+        <section class="about" aria-labelledby="about-heading">
+          <div class="about-content">
+            <h2 id="about-heading">About Me</h2>
+            <p>
+              I’m Junto Mabuchi (pronounced <strong>jun-toe mah-boo-chee</strong>).
+            <p>
+              I was born in Japan, grew up in Shanghai, China, and earned my
+              bachelor’s degree in Electronic &amp; Information Engineering (ECE) at
+              Imperial College London in the UK.
+            <p>
+              I’m currently a Software Engineer Intern at Confo Quanta.
+            <p>My technical interests include:
+            <ul>
+              <li>Embedded systems and firmware</li>
+              <li>Operating systems (UNIX, Linux)</li>
+              <li>Computer Architecture</li>
+              <li>Compilers</li>
+            </ul>
+            <p>
+              Outside of tech, I enjoy going to the gym and doing Brazilian jiu-jitsu.
+            <p>
+              Feel free to get in touch to talk about opportunities, or just say hello!
+          </div>
         </section>
-    </section>
 
-    <!-- About Me Section -->
-    <section class="about_me">
-        About Me
-        <div class="imperial">
-            <img src="images/imperial.jpg">
-            <p>Electronic and Information Engineering student at <a href="https://www.imperial.ac.uk/">Imperial College London</a> (2023-2026)</p>
-        </div>
-    </section>
+        <!-- Projects -->
+        <section aria-labelledby="projects-heading">
+          <h2 id="projects-heading">My Projects</h2>
+          <div class="project-list">
+            <!-- C Compiler -->
+            <article class="project">
+              <div class="project-content">
+                <header class="project-header">
+                  <img class="project-image project-image-logo"
+                      src="assets/projects/c-compiler/c-logo.svg"
+                      alt="C programming language logo" width="60" height="66">
+                  <div class="project-heading">
+                    <h3 class="project-title" id="c-compiler-heading">C Compiler</h3>
+                    <div class="project-meta">
+                      <p>C++ · Python</p>
+                      <a class="project-source"
+                          href="https://github.com/JuntoM147/c-compiler">
+                        Source code <span class="project-source-icon" aria-hidden="true">↗</span>
+                      </a>
+                    </div>
+                  </div>
+                </header>
+                <p class="project-description">
+                  A C compiler written in C++.
+              </div>
 
-    <!-- Personal Projects -->
-    <section>
-        <div class="projects"> Projects </div>
-    </section>
+              <details class="project-details">
+                <summary class="project-toggle" aria-describedby="c-compiler-heading">
+                  <span class="project-toggle-more">Read more</span>
+                  <span class="project-toggle-less">Read less</span>
+                </summary>
+                <div class="project-details-content">
+                  <div class="project-story">
+                    <p>
+                      For one of my modules at Imperial, I co-created a very basic C
+                      compiler that would translate ANSI C to RISC-V assembly. It
+                      was a really tough module and I vividly remember struggling
+                      a lot. Recently, I came across a book "Writing a C compiler"
+                      by Nora Sandler, and I decided I would revisit that project
+                      with the hopes of redeeming myself...
+                      <a href="https://github.com/JuntoM147/c-compiler">
+                        Check out the project on GitHub.
+                      </a>
+                  </div>
+                </div>
+              </details>
+            </article>
+          </div>
+        </section>
 
-    <!-- Skills -->
-    <section>
-        <div class="skills"> Skills </div>
-    </section>
-
-    <!-- Contact Me -->
-    <section>
-        <div class="contact_me"> Contact Me </div>
-    </section>
-
-    <!-- Bottom-->
-     <div class="bottom">
-        <button> CV </button>
-        <button> <img class=social_media_icons src="images/email.png"> </button>
-        <button> <img class=social_media_icons src="images/linkedin.png"> </button>
-        <button> <img class=social_media_icons src="images/github.png"> </button>
-        <button> <img class=social_media_icons src="images/instagram.png"> </button>
-        <button> <img class=social_media_icons src="images/wechat.png"> </button>
-     </div>
+        <!-- Updates -->
+        <section class="updates" aria-labelledby="updates-heading">
+          <h2 id="updates-heading">Updates</h2>
+          <ul class="update-list">
+            <li>
+              <time class="update-date" datetime="2026-11-08">8 November 2026</time>
+              — Launched the redesigned website.
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
-</body>
-</html>
