@@ -67,6 +67,7 @@ h2 {
 
 .contact-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
@@ -80,6 +81,7 @@ h2 {
   font: 13px/1.6 var(--font-family);
   justify-content: center;
   min-height: 44px;
+  min-width: 44px;
   padding: 5px 12px;
   text-decoration: none;
   white-space: nowrap;
@@ -390,24 +392,37 @@ h2 {
   }
 }
 
-@media (max-width: 640px) {
+/* Collapse the sidebar before it squeezes the reading column. */
+@media (max-width: 800px) {
   .page-layout {
     gap: 32px;
     grid-template-columns: minmax(0, 1fr);
+    padding-top: 28px;
   }
 
   .profile {
-    max-width: 320px;
+    align-items: center;
+    gap: 24px;
+    grid-template-columns: 128px minmax(0, 1fr);
   }
 
-  .profile-photo {
-    max-width: 160px;
+  .profile-details {
+    font-size: 14px;
+    overflow-wrap: anywhere;
   }
 }
 
 @media (max-width: 520px) {
   body {
     padding: 0 20px 36px;
+  }
+
+  .site-header {
+    gap: 16px;
+  }
+
+  .site-name {
+    font-size: 26px;
   }
 
   .contact-links {
@@ -419,7 +434,21 @@ h2 {
   }
 
   .page-layout {
-    padding-top: 28px;
+    gap: 28px;
+    padding-top: 24px;
+  }
+
+  .profile {
+    gap: 16px;
+    grid-template-columns: 96px minmax(0, 1fr);
+  }
+
+  .profile-details {
+    gap: 10px;
+  }
+
+  .about {
+    padding-bottom: 28px;
   }
 
   .project {
@@ -442,5 +471,30 @@ h2 {
 
   .project-meta {
     gap: 4px 10px;
+  }
+
+  .project-title {
+    font-size: 22px;
+    letter-spacing: -0.4px;
+  }
+
+  .updates {
+    margin-top: 28px;
+  }
+}
+
+@media (max-width: 360px) {
+  body {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .profile {
+    gap: 12px;
+    grid-template-columns: 80px minmax(0, 1fr);
+  }
+
+  .project {
+    --project-spacing: 16px;
   }
 }
